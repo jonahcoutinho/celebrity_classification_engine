@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Person Classifier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dropzone.min.css">
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="#">Sports Person Classifier</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+        <div class="col card-wrapper" data-player="lionel_messi">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="https://images.daznservices.com/di/library/GOAL/58/f6/lionel-messi-barcelona-2020-21_1uj2npprp20ux1kyoo77jlm24j.jpg?t=-962566023&quality=60&w=1200&h=800" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Lionel Messi</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>            
+            <div class="col card-wrapper" data-player="maria_sharapova">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="data:image/jpeg;base64,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" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title">Maria Sharapova</h4>
+                            </p>
+                        </div>
+                    </div>
+            </div>            
+            <div class="col card-wrapper" data-player="roger_federer">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="https://www.tennisworldusa.org/imgb/103687/roger-federer-things-dont-come-easy-anymore-.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title">Roger Federer</h4>
+                            </p>
+                        </div>
+                    </div>
+            </div>          
+
+            <div class="col card-wrapper" data-player="serena_williams">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5ecc8412798e4c00060d2536%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D86%26cropX2%3D1960%26cropY1%3D0%26cropY2%3D1876" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Serena Williams</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>      
+
+            <div class="col card-wrapper" data-player="virat_kohli">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="https://crictribune.com/wp-content/uploads/2020/07/6360bfebb61cd2cd77ce078870849b9d.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Virat Kohli</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <form action="/file-upload" class="dropzone" id="dropzone">
+                            <div class="dz-message needsclick">
+                                <img src="https://www.lifewire.com/thmb/2KYEaloqH6P4xz3c9Ot2GlPLuds=/1920x1080/smart/filters:no_upscale()/cloud-upload-a30f385a928e44e199a62210d578375a.jpg" width="50vw" height="50vw"><br>
+                                <span class="note needsclick">Drop files here or click to upload</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-3 mx-auto">
+                        <button id="submitBtn" type="button" class="btn btn-success">Classify</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-8 error" id="error" >
+                <p>Can't classify image. Classifier was not able to detect face and two eyes properly</p>    
+            </div>
+
+            <div class="col-sm-4" id="resultHolder">
+            </div>
+            <div class="col-sm-4" id="divClassTable">
+                <table id="classTable">
+                        <tr>
+                            <th>Player</th>
+                            <th>Probability Score</th>
+                        </tr>
+                        <tr>
+                            <td>Leonel Messi</td>
+                            <td id="score_lionel_messi"></td>
+                        </tr>
+                        <tr>
+                            <td>Maria Sharapova</td>
+                            <td id="score_maria_sharapova"></td>
+                        </tr>
+                        <tr>
+                            <td>Rodger Federer</td>
+                            <td id="score_roger_federer"></td>
+                        </tr>
+                        <tr>
+                            <td>Serena Williams</td>
+                            <td id="score_serena_williams"></td>
+                        </tr>
+                        <tr>
+                            <td>Virat Kohli</td>
+                            <td id="score_virat_kohli"></td>
+                        </tr>
+                </table>
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./dropzone.min.js"></script>
+<script src="./app.js"></script>
+</html>
